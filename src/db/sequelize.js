@@ -2,7 +2,7 @@ const { Sequelize, DataTypes } = require("sequelize");
 const PokemonModel = require("../models/pokemon.js");
 const UserModel = require("../models/user.js");
 const pokemons = require("./mock-pokemon.js");
-const bcrypt = require("bcryptjs");
+const bcrypt = require("bcrypt");
 
 const sequelize = new Sequelize("sql7632937", "sql7632937", "XrmXRmgIc5", {
   host: "sql7.freesqldatabase.com",
