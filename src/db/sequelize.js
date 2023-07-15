@@ -2,7 +2,7 @@ const { Sequelize, DataTypes } = require("sequelize");
 const PokemonModel = require("../models/pokemon.js");
 const UserModel = require("../models/user.js");
 const pokemons = require("./mock-pokemon.js");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 const sequelize = new Sequelize("sql7632937", "sql7632937", "XrmXRmgIc5", {
   host: "sql7.freesqldatabase.com",
@@ -26,10 +26,10 @@ const initDb = () => {
       }).then(pokemon);
     });
     bcrypt
-      .hash("pikachou", 10)
+      .hash("pikachu", 10)
       .then((hash) => {
         User.create({
-          username: "pikachu",
+          username: "pikachou",
           password: hash,
         });
       })
