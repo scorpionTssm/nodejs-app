@@ -1,10 +1,10 @@
 const pokemons = require("../db/mock-pokemon");
 const { Pokemon } = require("../db/sequelize");
 const { Op } = require("sequelize");
-const auth = require("../auth/auth");
+//const auth = require("../auth/auth");
 
 module.exports = (app) => {
-  app.get("/api/pokemons", auth, (req, res) => {
+  app.get("/api/pokemons", (req, res) => {
     const limit = parseInt(req.query.limit) || 5;
 
     if (req.query.name) {
