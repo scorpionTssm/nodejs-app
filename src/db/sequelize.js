@@ -4,12 +4,10 @@ const UserModel = require("../models/user.js");
 const pokemons = require("./mock-pokemon.js");
 const bcrypt = require("bcrypt");
 
-const sequelize = new Sequelize("pokedex", "root", "", {
-  host: "localhost",
-  dialect: "mariadb",
-  dialectOptions: {
-    timezone: "Etc/GMT-2",
-  },
+const sequelize = new Sequelize("sql7632937", "sql7632937", "XrmXRmgIc5", {
+  host: "sql7.freesqldatabase.com",
+  dialect: "mysql",
+
   logging: false,
 });
 

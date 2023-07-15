@@ -3,13 +3,8 @@
   "version": "1.0.0",
   "description": "an awesome API Rest to handle pokemon",
   "main": "app.js",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
-    "start": " node app.js",
-    "dev": "NODE_ENV=development nodemon app.js",
-    "vercel-build":"echo hello"
+    "start": "nodemon app.js"
   },
   "author": "assane",
   "license": "ISC",
@@ -19,11 +14,11 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.1",
     "mariadb": "^3.2.0",
+    "mysql2": "^3.5.1",
     "sequelize": "^6.32.1",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-   
     "nodemon": "^2.0.22"
   }
 }
